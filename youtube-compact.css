@@ -4,6 +4,7 @@
 
 @-moz-document url-prefix("https://www.youtube.com/watch?") {
 
+
 /* comment header spacing */
 ytd-comment-thread-renderer {margin-bottom: .3em}
 #header.ytd-comment-renderer,
@@ -11,7 +12,25 @@ ytd-comment-thread-renderer {margin-bottom: .3em}
 	margin-bottom: 0;
 }
 
+/* put actions and rating to the right of comment header */
+#main.ytd-comment-renderer {
+	display: grid;
+	grid-template-columns: auto 20em;
+}
+#header.ytd-comment-renderer {order: 1}
+ytd-comment-action-buttons-renderer {order: 2}
+ytd-expander.ytd-comment-renderer {
+	order: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+#moderation-buttons {order: 4}
+
+
 /* actions and rating sizing */
+
+/* to do: align items inside to the right */
+/* #toolbar.ytd-comment-action-buttons-renderer {align-items: flex-end} */
 
 ytd-comment-action-buttons-renderer {min-height: .5em}
 paper-button.ytd-button-renderer {padding: .2em}
@@ -20,5 +39,14 @@ button[is="paper-icon-button-light"].ytd-toggle-button-renderer {
 	padding: .1em;
 }
 #creator-heart-button.ytd-creator-heart-renderer {height: 1.5em}
+
+#vote-count.ytd-comment-action-buttons-renderer {
+	min-width: 2em;
+	margin-right: .5em;
+	text-align: right;
+}
+
+/* hide reply button unless hovering over the comment or tabbed focus onto the button */
+ytd-comment-renderer:not(:hover) #reply-button.ytd-comment-action-buttons-renderer paper-button:not(.keyboard-focus) {opacity: 0}
 
 }
