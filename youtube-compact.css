@@ -1,0 +1,24 @@
+/* Copyright Daniel Smith
+   licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+   http://creativecommons.org/licenses/by-nc-sa/4.0 */
+
+@-moz-document url-prefix("https://www.youtube.com/watch?") {
+
+/* comment header spacing */
+ytd-comment-thread-renderer {margin-bottom: .3em}
+#header.ytd-comment-renderer,
+#author-text.yt-simple-endpoint.ytd-comment-renderer {
+	margin-bottom: 0;
+}
+
+/* actions and rating sizing */
+
+ytd-comment-action-buttons-renderer {min-height: .5em}
+paper-button.ytd-button-renderer {padding: .2em}
+button[is="paper-icon-button-light"].ytd-toggle-button-renderer {
+	height: 1.5em;
+	padding: .1em;
+}
+#creator-heart-button.ytd-creator-heart-renderer {height: 1.5em}
+
+}
