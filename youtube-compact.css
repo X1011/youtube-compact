@@ -5,20 +5,21 @@
 @-moz-document url-prefix("https://www.youtube.com/watch?") {
 
 /* comment header spacing */
-ytd-comment-thread-renderer {margin-bottom: .3em}
+ytd-comment-thread-renderer {margin-bottom: .3rem}
 #header.ytd-comment-renderer,
-#author-text.yt-simple-endpoint.ytd-comment-renderer {
-	margin-bottom: 0;
-}
+#author-text.yt-simple-endpoint.ytd-comment-renderer {margin-bottom: 0}
 
 /* actions and rating sizing */
 
-ytd-comment-action-buttons-renderer {min-height: .5em}
-paper-button.ytd-button-renderer {padding: .2em}
-button[is="paper-icon-button-light"].ytd-toggle-button-renderer {
-	height: 1.5em;
-	padding: .1em;
+paper-button.ytd-button-renderer {padding: .2rem}
+yt-icon-button.ytd-toggle-button-renderer {
+	height: 2rem;
+	padding: .1rem;
 }
-#creator-heart-button.ytd-creator-heart-renderer {height: 1.5em}
+#creator-heart-button.ytd-creator-heart-renderer {height: 1.5rem}
+
+/* save to playlist menu */
+#playlists.ytd-add-to-playlist-renderer {padding: 1rem}
+#playlists.ytd-add-to-playlist-renderer > *.ytd-add-to-playlist-renderer:not(:last-child) {margin-bottom: 0}
 
 }
