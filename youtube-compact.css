@@ -2,7 +2,7 @@
    licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
    http://creativecommons.org/licenses/by-nc-sa/4.0 */
 
-@-moz-document url-prefix("https://www.youtube.com/watch?") {
+@-moz-document domain("youtube.com") {
 
 /* comment header spacing */
 ytd-comment-thread-renderer {margin-bottom: .3rem}
