@@ -16,7 +16,9 @@ yt-icon-button.ytd-toggle-button-renderer {
 	height: 2rem;
 	padding: .1rem;
 }
-#creator-heart-button.ytd-creator-heart-renderer {height: 1.5rem}
+#creator-heart-button.ytd-creator-heart-renderer {height: 1.7rem}
+#hearted-thumbnail.ytd-creator-heart-renderer {margin: .2rem}
+#unhearted.ytd-creator-heart-renderer {padding: 0}
 
 /* save to playlist menu */
 #playlists.ytd-add-to-playlist-renderer {padding: 1rem}
