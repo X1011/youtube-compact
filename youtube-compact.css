@@ -9,13 +9,14 @@ ytd-comment-thread-renderer {margin-bottom: .3rem}
 #header.ytd-comment-renderer,
 #author-text.yt-simple-endpoint.ytd-comment-renderer {margin-bottom: 0}
 
-/* actions and rating sizing */
-
-paper-button.ytd-button-renderer {padding: .2rem}
-yt-icon-button.ytd-toggle-button-renderer {
+/* like & dislike buttons */
+ytd-comment-action-buttons-renderer yt-icon-button.ytd-toggle-button-renderer {
 	height: 2rem;
 	padding: .1rem;
 }
+/* reply button */
+ytd-comment-action-buttons-renderer paper-button.ytd-button-renderer {padding: .2rem}
+
 #creator-heart-button.ytd-creator-heart-renderer {height: 1.7rem}
 #hearted-thumbnail.ytd-creator-heart-renderer {margin: .2rem}
 #unhearted.ytd-creator-heart-renderer {padding: 0}
