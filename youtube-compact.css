@@ -24,11 +24,13 @@ ytd-comment-action-buttons-renderer paper-button.ytd-button-renderer {padding: .
 /* 'save to playlist' menu */
 #playlists.ytd-add-to-playlist-renderer {padding: 1rem}
 #playlists.ytd-add-to-playlist-renderer > *.ytd-add-to-playlist-renderer:not(:last-child) {margin-bottom: 0}
+}
 
-/* YouTube Music 'add to playlist menu' */
+@-moz-document domain("music.youtube.com") {
+/* 'add to playlist menu' */
 	.headline.ytmusic-add-to-playlist-renderer {
 		padding-top:    .2em;
-		padding-bottom: .2em;	
+		padding-bottom: .2em;
 	}
 	#playlists.ytmusic-add-to-playlist-renderer > .ytmusic-add-to-playlist-renderer:first-child {margin-top:    .5em}
 	#playlists.ytmusic-add-to-playlist-renderer > .ytmusic-add-to-playlist-renderer:last-child  {margin-bottom: .5em}
@@ -42,7 +44,7 @@ ytd-comment-action-buttons-renderer paper-button.ytd-button-renderer {padding: .
 	/* put title and privacy setting on same line to reduce height further */
 	.information-container.ytmusic-playlist-add-to-option-renderer {
 		flex-direction: row;
-		justify-content: space-between
+		justify-content: space-between;
 	}
 	/* 'Create new playlist' button */
 	ytmusic-add-to-playlist-renderer paper-button.yt-button-renderer {height: 2em}
